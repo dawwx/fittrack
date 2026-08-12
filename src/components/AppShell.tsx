@@ -48,7 +48,7 @@ export function AppShell({
 }: {
   children: ReactNode;
   title: string;
-  subtitle?: string;
+  subtitle?: string | undefined;
 }) {
   const pathname = useRouterState({ select: (s) => s.location.pathname });
   const navigate = useNavigate();
